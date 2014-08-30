@@ -13,3 +13,5 @@
 Route::get("/", "DataSourceController@getList");
 
 Route::get("datasource/list", "DataSourceController@getList");
+
+Route::post("datasource/create", "DataSourceController@postCreate");
