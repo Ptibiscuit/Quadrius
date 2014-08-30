@@ -10,8 +10,6 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
+Route::get("/", "DataSourceController@getList");
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::get("datasource/list", "DataSourceController@getList");
