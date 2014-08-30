@@ -5,7 +5,7 @@
 	@if (count($datasources) > 0)
 		@foreach ($datasources as $datasource)
 			<div>
-				{{{ $datasource.name }}}
+				{{{ $datasource->name }}}
 			</div>
 		@endforeach
 	@else

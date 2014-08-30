@@ -2,6 +2,8 @@
 
 class DataSource extends Eloquent {
 	protected $table = "datasources";
+	public $timestamps = false;
+	protected $fillable = array("name", "username", "connection_string", "password");
 
 
 	/**
